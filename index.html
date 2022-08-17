@@ -1,0 +1,35 @@
+<style>
+  .text {
+  position: relative;
+  font-size: 14px;
+  color: black;
+  font-family: sans-serif;
+  width: 250px; /* Could be anything you like. */
+}
+
+.text-concat {
+  position: relative;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.2em;
+  text-align:justify;
+}
+
+.text.ellipsis::after {
+  content: "...";
+  position: absolute;
+  right: -12px; 
+  bottom: 5px;
+}
+
+/* Right and bottom for the psudo class are px based on various factors, font-size etc... Tweak for your own needs. */
+</style>
+<div class="text ellipsis">
+  <span class="text-concat">
+Lorem ipsum dolor sit amet, nibh eleifend cu his, porro fugit mandamus no mea. Sit tale facete voluptatum ea, ad sumo altera scripta per, eius ullum feugait id duo. At nominavi pericula persecuti ius, sea at sonet tincidunt, cu posse facilisis eos. Aliquid philosophia contentiones id eos, per cu atqui option disputationi, no vis nobis vidisse. Eu has mentitum conclusionemque, primis deterruisset est in.
+
+Virtute feugait ei vim. Commune honestatis accommodare pri ex. Ut est civibus accusam, pro principes conceptam ei, et duo case veniam. Partiendo concludaturque at duo. Ei eirmod verear consequuntur pri. Esse malis facilisis ex vix, cu hinc suavitate scriptorem pri.
+  </span>
+</div>
